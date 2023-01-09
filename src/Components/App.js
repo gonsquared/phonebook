@@ -4,6 +4,7 @@ import './App.css'
 import PlayerList from './Player/PlayerList'
 import PlayerSingle from './Player/PlayerSingle'
 import PlayerForm from './Player/PlayerForm'
+import Nav from './Nav/Nav'
 
 class App extends React.Component {
   constructor(props) {
@@ -39,13 +40,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        <div className='row'>
-          <nav>
-            <div className='nav-wrapper blue darken-4'>
-              <a href="/" className='brand-logo'>Soccer Management</a>
-            </div>
-          </nav>
-        </div>
+        <Nav />
         <div className='row'>
           <div className='col s3'>
             <PlayerList
